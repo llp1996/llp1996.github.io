@@ -109,12 +109,12 @@
 
 
   <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="llp&#39;s site">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="llp&#39;s site">
 <meta property="og:locale" content="default">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="llp&#39;s site">
 
 
 
@@ -131,7 +131,7 @@
   };
 </script>
 
-  <title>Hexo</title>
+  <title>llp's site</title>
   
 
 
@@ -190,7 +190,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
+        <span class="site-title">llp's site</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -277,16 +277,186 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/09/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/09/python基础/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="Lin lianpeng">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="llp's site">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/10/09/python基础/" itemprop="url">
+                  Unbenannt
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2018-10-09 12:49:21" itemprop="dateCreated datePublished" datetime="2018-10-09T12:49:21+08:00">2018-10-09</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Updated at: 2018-06-10 14:45:01" itemprop="dateModified" datetime="2018-06-10T14:45:01+08:00">2018-06-10</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="python的一些常用函数"><a href="#python的一些常用函数" class="headerlink" title="python的一些常用函数"></a>python的一些常用函数</h3><ol>
+<li>format()格式化字符串<br><code>&#39;hello,{0},成绩提升了{1:.1f}%&#39;.format(&#39;小明&#39;,17.125)</code><br>用传入的参数依次替换占位符{0}{1}  </li>
+<li>input函数<br><code>birth=input(&#39;birth:&#39;)</code>返回类型是str，需要通过int(birth)来转化为int类型  </li>
+<li>sorted(iterable,cmp,key,reverse)对所有可迭代的对象进行排序操作，返回重新排序的列表，参数：可迭代对象、比较函数、比较对象、排序规则（True为降序）  </li>
+<li>readlines()从文件中一次读取所有内容并按行返回list,其内部为str  </li>
+<li><code>import re re.split(r&#39;\s+&#39;,str)</code>按任意长的空格切分字符串</li>
+<li></li>
+</ol>
+<h1 id="python的基础数据类型"><a href="#python的基础数据类型" class="headerlink" title="python的基础数据类型"></a>python的基础数据类型</h1><h2 id="list-列表"><a href="#list-列表" class="headerlink" title="list[]列表"></a>list[]列表</h2><p>1、list是一种有序的集合，可以随时添加和删除元素,元素的数据类型可以不同，也可以是一个list<br>len()函数可以获得list元素的个数<br>索引来访问list中的每一个元素（索引从0开始，可以是负数）<br>append()函数来追加元素到末尾<br>insert()函数将元素插入指定位置<br>pop()函数删除list末尾的函数<br>pop(i)删除指定位置的元素<br>使用索引直接赋值可以替换当前位置的元素<br>extend()函数可以接受一个list并实现拼接，可以是多个子项<br>append()函数单纯的在列表最后增添一个子项<br>list可以乘以一个数字来进行扩张  </p>
+<h2 id="tuple-元组"><a href="#tuple-元组" class="headerlink" title="tuple()元组"></a>tuple()元组</h2><p>1、tuple和list十分相似但是它一旦初始化就不能修改，且在定义的时候tuple的值就要确定<br>2、定义一个空的tuple:<code>t=()</code>，定义一个只有一个元素的tuple:<code>t=(1,)</code><br>3、如果tuple的元素是一个可变对象(比如list)，那么这个list中的元素可以被改变，tuple只是指向不变。  </p>
+<h2 id="dict-字典"><a href="#dict-字典" class="headerlink" title="dict{}字典"></a>dict{}字典</h2><p>1、使用key-value存储，查找速度极快。示例：<code>d={&#39;A&#39;:95,&#39;B&#39;:85,&#39;C&#39;:75}</code>冒号之前为key，之后为value，key必须是不可变对象<br>2、一个key值只能对应一个value，多次对一个key值放入value，后面的值会顶掉前面的<br>3、可以通过in或者get函数来判断一个key是否存在<br>4、pop(key)会删除对应的键值对<br>5、get(key,default=none)返回指定键的值，不存在则返回default的值<br>6、items()返回dict的(key,value)元组对的列表  </p>
+<h2 id="set-集合"><a href="#set-集合" class="headerlink" title="set()集合"></a>set()集合</h2><p>1、set是没有存放value的dict，可以看作数学上无序和无重复元素的集合<br>2、创建set：<code>s=set([1,2,4,3])</code>需要提供一个list作为输入<br>3、remove(key)  add(key) |：并集操作 &amp;：交集操作</p>
+<h2 id="str字符串"><a href="#str字符串" class="headerlink" title="str字符串"></a>str字符串</h2><ol>
+<li>str.strip([chars])移除字符串两端指定字符，默认为空格  </li>
+<li>str.split(‘\t’)按照’\t’分割字符串，默认分割全部制表符,可以添加数字来表明分割几次，最后返回字符串的list  </li>
+<li>str.startswith(‘abc’)返回字符串是否以‘abc’开头</li>
+<li></li>
+</ol>
+<h2 id="文件读取"><a href="#文件读取" class="headerlink" title="文件读取"></a>文件读取</h2><p>1、csv文件读取：csv.reader(file);返回的是csv表格中每一行的列表组成的列表<br>2、向csv文件中写文件：file= open(‘my.csv’,’wb’);my_writer=csv.writer(file);temp=[];my_writer.writerow(tmp)<br>输入是每一个行组成列表的列表  </p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/09/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lin lianpeng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="llp's site">
     </span>
 
     
@@ -438,7 +608,7 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <p class="site-author-name" itemprop="name">John Doe</p>
+              <p class="site-author-name" itemprop="name">Lin lianpeng</p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
@@ -449,7 +619,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">Artikel</span>
                   </a>
                 </div>
@@ -497,7 +667,7 @@
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">Lin lianpeng</span>
 
   
 
